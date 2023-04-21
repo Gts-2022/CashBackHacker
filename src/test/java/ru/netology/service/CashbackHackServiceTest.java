@@ -6,8 +6,9 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
 public class CashbackHackServiceTest {
-    @Test
+    @Test//Тест 1
     public void shouldReturn100IfAmountIs900() {
+        // Вернуть 100, если покупка на 900 рублей
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
         int actual = service.remain(amount);
@@ -24,7 +25,7 @@ public class CashbackHackServiceTest {
         int actual = service.remain(amount);
         int expected = 0;
 
-        assertEquals( expected,actual);
+        assertEquals(expected, actual);
     }
 
 }
